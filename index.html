@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="bg-slate-400">
+    <style>
+        .custom-container {
+            margin: 0 auto;
+            width: 90%;
+        }
+    </style>
+    <!-- Header -->
+    <header class="sticky top-0 left-0 right-0 h-[80px] bg-[#2f2f308d] ">
+        <nav class="custom-container flex justify-between items-center flex-row py-4">
+            <div class="w-50%">
+                <a href="./index.html"><i class="fa-solid fa-list-check text-[50px] text-blue-800"></i></a>
+            </div>
+            <ul class="lg:flex gap-[20px]">
+                <li
+                    class="text-[18px] text-gray-600 border-b-[2px] border-b-transparent hover:text-blue-900 hover:border-b-[2px] hover:border-b-blue-700">
+                    <a href="#task1">Task1</a>
+                </li>
+                <li
+                    class="text-[18px] text-gray-600 border-b-[2px] border-b-transparent hover:text-blue-900 hover:border-b-[2px] hover:border-b-blue-700">
+                    <a href="#task2">Task2</a>
+                </li>
+                <li
+                    class="text-[18px] text-gray-600 border-b-[2px] border-b-transparent hover:text-blue-900 hover:border-b-[2px] hover:border-b-blue-700">
+                    <a href="#">Task3</a>
+                </li>
+                <li
+                    class="text-[18px] text-gray-600 border-b-[2px] border-b-transparent hover:text-blue-900 hover:border-b-[2px] hover:border-b-blue-700">
+                    <a href="#">Task4</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <!-- Header end-->
+
+    <main>
+        <!-- task1 -->
+        <section class="custom-container h-100 my-10" id="task1">
+            <div class="card flex justify-center items-center flex-col">
+                <h1>Task 1</h1>
+                <textarea  placeholder="Enter text"  id="textarea" class="resize-none border-[2px] border-blue-800 h-[200px] w-[400px]" onkeyup = "countText(event)"></textarea>
+                <p id="count" class="text-[30px]"></p>
+            </div>
+        </section>
+        <!-- task1 end -->
+
+
+        <!-- Task 2 -->
+        <section class="custom-container h-100 my-10" id="task2">
+            <div class="card flex justify-center items-center flex-col gap-5">
+                <h1>Task 2</h1>
+               <div class="flex flex-col items-start gap-3">
+                
+                <textarea placeholder="Enter text" id="textarea_nd" class="resize-none border-[2px] border-blue-800 h-[200px] w-[400px]"></textarea>
+                <input type="text" placeholder="Enter word to check" class="py-3" id="wordToCheck" onkeyup="checkText()" >
+                <p id="result" class="text-[30px]"></p>
+               </div>
+            </div>
+        </section>
+        <!-- Task 2 end-->
+
+
+        
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

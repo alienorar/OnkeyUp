@@ -79,17 +79,26 @@
         <!-- Task 4 -->
 <section class="custom-container h-100 my-10" id="task2">
     <div class="card flex justify-center items-center flex-col gap-5">
-        <h1>Task 2</h1>
+        <h1>Task 4</h1>
         <div class="flex flex-col items-start gap-3">
-
-            <textarea placeholder="Enter text" id="textarea_nd"
-                class="resize-none border-[2px] border-blue-800 h-[200px] w-[400px]"></textarea>
-            <input type="text" placeholder="Enter word to check" class="py-3" id="wordToCheck" onkeyup="checkText()">
-            <p id="result" class="text-[30px]"></p>
+        <input type="file" placeholder="Choose file" id="file" onchange="checkVolume()">
+            <p id="volume" class="text-[30px] text-green-900"></p>
         </div>
     </div>
 </section>
         <!-- Task 4 -->
+
+        <!-- Task 5-->
+<section class="custom-container h-100 my-10" id="task2">
+    <div class="card flex justify-center items-center flex-col gap-5">
+        <h1>Task 5</h1>
+        <div class="flex flex-col items-start gap-3">
+        <input type="text" placeholder="Enter braces" id="braceInput" onkeyup = "checkBraces()" class="py-3">
+            <p id="bracesOutput" class="text-[30px]"></p>
+        </div>
+    </div>
+</section>
+        <!-- Task 5 -->
 
 
     </main>
